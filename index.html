@@ -1,42 +1,97 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>Tienda de Zapatillas</title>
+
 <link rel="stylesheet" href="estilos.css">
+
 </head>
 
 <body>
 
-<header>
-<h1>Tienda de Zapatillas</h1>
-<p>Las mejores zapatillas deportivas</p>
+<header class="header">
+
+<div class="logo">
+<h1>UrbanSneakers</h1>
+</div>
+
+<nav class="menu">
+<a href="#">Inicio</a>
+<a href="#">Productos</a>
+<a href="#">Ofertas</a>
+<a href="#">Contacto</a>
+</nav>
+
 </header>
+
+<section class="hero">
+
+<h2>Las mejores zapatillas del 2026</h2>
+<p>Estilo, comodidad y calidad</p>
+
+</section>
 
 <section class="productos">
 
-<div class="producto">
-<img src="https://www.nike.com.pe/on/demandware.static/-/Sites-catalog-equinox/default/dw416dbe43/images/hi-res/197593766984_1_20250103120000-mrtPeru.jpg" alt="Zapatilla Nike">
-<h2>Zapatilla Nike</h2>
-<p>Precio: S/250</p>
-<button>Comprar</button>
+<div class="card">
+
+<img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff">
+
+<h3>Nike Air</h3>
+
+<p class="precio">S/ 299</p>
+
+<button onclick="comprar('Nike Air')">Comprar</button>
+
 </div>
 
-<div class="producto">
-<img src="https://assets.adidas.com/images/w_600,f_auto,q_auto/53cbcd5d1b2a4bb3be43e8a94caf1d41_9366/Zapatillas_de_Running_Runfalcon_5_Negro_IH7758_HM11.jpg" alt="Zapatilla Adidas">
-<h2>Zapatilla Adidas</h2>
-<p>Precio: S/220</p>
-<button>Comprar</button>
+
+<div class="card">
+
+<img src="https://images.unsplash.com/photo-1608231387042-66d1773070a5">
+
+<h3>Puma Sport</h3>
+
+<p class="precio">S/ 249</p>
+
+<button onclick="comprar('Puma Sport')">Comprar</button>
+
 </div>
 
-<div class="producto">
-<img src="https://m.media-amazon.com/images/I/51uJuQ1oh0L._AC_UY900_.jpg" alt="Zapatilla Puma">
-<h2>Zapatilla Puma</h2>
-<p>Precio: S/200</p>
-<button>Comprar</button>
+
+<div class="card">
+
+<img src="https://images.unsplash.com/photo-1719759674376-a001dc166cb6?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YWRpZGFzJTIwcnVubmluZ3xlbnwwfHwwfHx8MA%3D%3D">
+
+<h3>Adidas Run</h3>
+
+<p class="precio">S/ 279</p>
+
+<button onclick="comprar('Adidas Run')">Comprar</button>
+
 </div>
 
 </section>
+
+<footer>
+
+<p>© 2026 UrbanSneakers | Diseñado por Wilmer</p>
+
+</footer>
+
+<script>
+
+function comprar(producto){
+
+alert("Has agregado al carrito: " + producto);
+
+}
+
+</script>
 
 </body>
 </html>
